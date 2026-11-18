@@ -17,7 +17,7 @@ import sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = "https://sumi0917.github.io/ello-hotdeal"
 TARGET = "https://litt.ly/ello"
-SIZE = 1080
+W, H = 1200, 630  # SNS 카드 표준 비율(1.91:1). 표지는 잘리지 않게 가운데에 그대로 넣는다.
 MAX_BYTES = 800 * 1024
 
 PRODUCTS = [
@@ -126,8 +126,24 @@ PAGE = """<!doctype html>
 """
 
 
+def _edge_color(im):
+    """표지 테두리에서 가장 흔한 색 (배경 이어붙이기용)"""
+    from collections import Counter
+
+    w, h = im.size
+    px = im.convert("RGB").load()
+    picks = []
+    for x in range(0, w, max(1, w // 60)):
+        picks.append(px[x, 0])
+        picks.append(px[x, h - 1])
+    for y in range(0, h, max(1, h // 60)):
+        picks.append(px[0, y])
+        picks.append(px[w - 1, y])
+    return Counter(picks).most_common(1)[0][0]
+
+
 def prepare_image(src, dst_dir, slug):
-    """1080 정사각 PNG로 맞추고, 너무 무거우면 JPEG로 낮춘다. (파일명, w, h, type) 반환"""
+    """1200x630 SNS 카드 PNG로 맞추고, 너무 무거우면 JPEG로 낮춘다. (파일명, w, h, type) 반환"""
     from PIL import Image
 
     im = Image.open(src)
@@ -139,29 +155,30 @@ def prepare_image(src, dst_dir, slug):
     else:
         im = im.convert("RGB")
 
-    if im.size != (SIZE, SIZE):
-        # 비율 유지한 채 1080 정사각으로 꽉 채우고 가운데 자르기
-        w, h = im.size
-        scale = max(SIZE / w, SIZE / h)
-        im = im.resize((max(SIZE, round(w * scale)), max(SIZE, round(h * scale))), Image.LANCZOS)
-        left = (im.width - SIZE) // 2
-        top = (im.height - SIZE) // 2
-        im = im.crop((left, top, left + SIZE, top + SIZE))
+    # 표지를 정사각 -> 630 높이 -> 1200x630 카드 가운데에 그대로 배치 (잘림 없음)
+    w, h = im.size
+    side = max(w, h)
+    edge = _edge_color(im)
+    square = Image.new("RGB", (side, side), edge)
+    square.paste(im, ((side - w) // 2, (side - h) // 2))
+    cover = square.resize((H, H), Image.LANCZOS)
+    card = Image.new("RGB", (W, H), edge)
+    card.paste(cover, ((W - H) // 2, 0))
 
     png = os.path.join(dst_dir, slug + ".png")
-    im.save(png, "PNG", optimize=True)
+    card.save(png, "PNG", optimize=True)
     if os.path.getsize(png) <= MAX_BYTES:
-        return slug + ".png", im.width, im.height, "image/png"
+        return slug + ".png", card.width, card.height, "image/png"
 
     os.remove(png)
     jpg = os.path.join(dst_dir, slug + ".jpg")
     quality = 90
     while quality >= 60:
-        im.save(jpg, "JPEG", quality=quality, optimize=True, progressive=True)
+        card.save(jpg, "JPEG", quality=quality, optimize=True, progressive=True)
         if os.path.getsize(jpg) <= MAX_BYTES:
             break
         quality -= 5
-    return slug + ".jpg", im.width, im.height, "image/jpeg"
+    return slug + ".jpg", card.width, card.height, "image/jpeg"
 
 
 def main():
