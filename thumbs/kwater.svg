@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="물방울과 커피">
+  <defs>
+    <linearGradient id="kb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E8F2FD"/><stop offset="1" stop-color="#D7E8FB"/>
+    </linearGradient>
+    <linearGradient id="drop" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#5BA8F5"/><stop offset="1" stop-color="#2C7BE5"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="44" fill="url(#kb)"/>
+  <path d="M78 42c0 0 34 40 34 62a34 34 0 0 1-68 0c0-22 34-62 34-62z" fill="url(#drop)"/>
+  <path d="M68 96a20 20 0 0 0 8 22" fill="none" stroke="#FFFFFF" stroke-opacity=".55" stroke-width="7" stroke-linecap="round"/>
+  <g>
+    <rect x="96" y="118" width="62" height="12" rx="6" fill="#FFFFFF" fill-opacity=".95"/>
+    <path d="M100 128h54v34a16 16 0 0 1-16 16h-22a16 16 0 0 1-16-16z" fill="#FFFFFF"/>
+    <path d="M154 134h6a12 12 0 0 1 0 24h-6z" fill="none" stroke="#FFFFFF" stroke-width="8"/>
+    <path d="M106 138h42v10a8 8 0 0 1-8 8h-26a8 8 0 0 1-8-8z" fill="#8B5A2B"/>
+  </g>
+</svg>

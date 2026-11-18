@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="공연 티켓과 커피">
+  <defs>
+    <linearGradient id="gb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F4EEFC"/><stop offset="1" stop-color="#E7DBF8"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="44" fill="url(#gb)"/>
+  <g transform="rotate(-8 100 96)">
+    <path d="M40 66h120a10 10 0 0 1 10 10v14a10 10 0 0 0 0 20v14a10 10 0 0 1-10 10H40a10 10 0 0 1-10-10V110a10 10 0 0 0 0-20V76a10 10 0 0 1 10-10z" fill="#FFFFFF"/>
+    <path d="M104 68v76" stroke="#D9C9F2" stroke-width="3" stroke-dasharray="7 7"/>
+    <path d="M62 92l7 14 15 2-11 11 3 15-14-7-14 7 3-15-11-11 15-2z" fill="#7C5CD6"/>
+    <g fill="#C9B6E9">
+      <rect x="118" y="86" width="38" height="6" rx="3"/>
+      <rect x="118" y="100" width="30" height="6" rx="3"/>
+      <rect x="118" y="114" width="34" height="6" rx="3"/>
+    </g>
+  </g>
+  <g>
+    <rect x="118" y="118" width="44" height="9" rx="4.5" fill="#FFFFFF"/>
+    <path d="M121 127h38v22a11 11 0 0 1-11 11h-16a11 11 0 0 1-11-11z" fill="#FFFFFF"/>
+    <path d="M124 133h32v6a8 8 0 0 1-8 8h-16a8 8 0 0 1-8-8z" fill="#8B5A2B"/>
+    <path d="M159 130h5a10 10 0 0 1 0 20h-5" fill="none" stroke="#FFFFFF" stroke-width="7"/>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="카페라떼">
+  <defs>
+    <linearGradient id="kb2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FDF0F1"/><stop offset="1" stop-color="#F8DDE2"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="44" fill="url(#kb2)"/>
+  <ellipse cx="100" cy="156" rx="40" ry="8" fill="#E7BCC7" opacity=".5"/>
+  <path d="M64 74h72l-8 66a14 14 0 0 1-14 12H86a14 14 0 0 1-14-12z" fill="#FFFFFF"/>
+  <path d="M64 74h72l-1 12H65z" fill="#F6D3DA"/>
+  <ellipse cx="100" cy="88" rx="33" ry="9" fill="#C98A5F"/>
+  <g fill="#FFF6EE">
+    <circle cx="96" cy="85" r="5"/><circle cx="104" cy="85" r="5"/>
+    <path d="M91 87h18l-9 11z"/>
+  </g>
+  <path d="M70 104h60l-7 40a10 10 0 0 1-10 9H87a10 10 0 0 1-10-9z" fill="#E6C3A5"/>
+  <path d="M136 90h6a12 12 0 0 1 0 24h-6" fill="none" stroke="#FFFFFF" stroke-width="7"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="주유쿠폰">
+  <defs>
+    <linearGradient id="sb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF4D8"/><stop offset="1" stop-color="#FFE6AE"/>
+    </linearGradient>
+    <linearGradient id="oil" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#FFC64A"/><stop offset="1" stop-color="#F2A20C"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="44" fill="url(#sb)"/>
+  <rect x="56" y="58" width="60" height="92" rx="10" fill="#3C4048"/>
+  <rect x="64" y="70" width="44" height="34" rx="6" fill="#FFF6DE"/>
+  <path d="M72 94c0-8 8-8 8-14 0 6 8 6 8 14a8 8 0 0 1-16 0z" fill="#F2A20C"/>
+  <rect x="70" y="118" width="32" height="8" rx="4" fill="#7A808A"/>
+  <rect x="70" y="132" width="32" height="8" rx="4" fill="#7A808A"/>
+  <path d="M116 74h12v54a10 10 0 0 0 10 10h6" fill="none" stroke="#3C4048" stroke-width="9" stroke-linecap="round"/>
+  <path d="M138 40c0 0 14 18 14 28a14 14 0 0 1-28 0c0-10 14-28 14-28z" fill="url(#oil)"/>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="번개와 아메리카노">
+  <defs>
+    <linearGradient id="pb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF7E2"/><stop offset="1" stop-color="#FFECC2"/>
+    </linearGradient>
+    <linearGradient id="cup" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F7F7F7"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="44" fill="url(#pb)"/>
+  <path d="M118 34l-38 62h26l-16 52 46-68h-26z" fill="#F6B32C"/>
+  <path d="M118 34l-38 62h12l34-50z" fill="#FFD478" opacity=".85"/>
+  <g>
+    <path d="M46 104h74l-7 48a16 16 0 0 1-16 14H69a16 16 0 0 1-16-14z" fill="url(#cup)"/>
+    <path d="M46 104h74l-1 10H47z" fill="#EFDCA9"/>
+    <path d="M53 122h60l-4 28a10 10 0 0 1-10 9H67a10 10 0 0 1-10-9z" fill="#6F4B2E"/>
+    <path d="M120 112h8a14 14 0 0 1 0 28h-8" fill="none" stroke="#FFFFFF" stroke-width="9"/>
+    <path d="M120 112h8a14 14 0 0 1 0 28h-8" fill="none" stroke="#EBDBB0" stroke-width="2" stroke-dasharray="0"/>
+  </g>
+</svg>
