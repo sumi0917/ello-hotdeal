@@ -92,8 +92,8 @@ PAGE = """<!doctype html>
 <meta name="twitter:description" content="{desc}">
 <meta name="twitter:image" content="{img_url}">
 
-<!-- 누르면 바로 리틀리로 이동 -->
-<meta http-equiv="refresh" content="0; url={target}">
+<!-- 누르면 바로 리틀리로 이동 (JS 리다이렉트 + 수동 버튼만 사용. meta refresh 는 쓰지 않는다:
+     스레드·메타 크롤러가 meta refresh 를 따라가 litt.ly 의 og:image 를 대신 긁어가기 때문) -->
 <style>
   :root {{ color-scheme: light; }}
   * {{ box-sizing: border-box; }}
@@ -117,6 +117,7 @@ PAGE = """<!doctype html>
   <img src="../og/{og_file}" alt="{title}" width="{img_w}" height="{img_h}">
   <h1>{title}</h1>
   <p class="sub">{desc}</p>
+  <noscript><p class="note">아래 버튼을 눌러 리틀리 페이지로 이동해 주세요.</p></noscript>
   <a class="go" href="{target}">리틀리 페이지로 이동하기</a>
   <p class="note">자동으로 넘어가지 않으면 위 버튼을 눌러 주세요.</p>
 </main>
