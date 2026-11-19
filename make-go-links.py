@@ -63,6 +63,14 @@ PRODUCTS = [
         desc="예비 1학년부터 기초 다지는 2학년까지! 하루 2쪽 30일 완주 + 스티커 진도표",
         img="digital-product-math-30days/cover_sq.png",
     ),
+    # 초2 1년 총정리: 리틀리 '초등 2학년 수학' 블럭(예습·맛보기 0원 + 전체본 2,900원)으로 바로 이동
+    dict(
+        slug="math2-year",
+        title="[무료맛보기·2,900원] 초등 2학년 수학 1년 총정리 (80쪽)",
+        desc="1학기 6단원 + 2학기 6단원 한 권에 · 개념·연습·문장제·단원평가 · 맛보기 14쪽 무료",
+        img="digital-product-math2-year-taste/cover_sq.png",
+        target="https://litt.ly/ello/sale/esdKvdP",
+    ),
 ]
 
 PAGE = """<!doctype html>
@@ -186,6 +194,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--src-root", default=os.path.normpath(os.path.join(HERE, "..", "..", "downloads")))
     ap.add_argument("--out", default=HERE)
+    ap.add_argument("--only", default="", help="이 slug 만 다시 만들기 (쉼표 구분). 비우면 전체")
     args = ap.parse_args()
 
     go_dir = os.path.join(args.out, "go")
@@ -193,7 +202,16 @@ def main():
     os.makedirs(go_dir, exist_ok=True)
     os.makedirs(og_dir, exist_ok=True)
 
+    only = [s.strip() for s in args.only.split(",") if s.strip()]
+    if only:
+        unknown = [s for s in only if s not in [p["slug"] for p in PRODUCTS]]
+        if unknown:
+            sys.exit("알 수 없는 slug: %s" % ", ".join(unknown))
+
     for p in PRODUCTS:
+        if only and p["slug"] not in only:
+            continue
+        target = p.get("target", TARGET)
         src = os.path.join(args.src_root, p["img"])
         if not os.path.exists(src):
             sys.exit("이미지 원본이 없습니다: %s" % src)
@@ -207,7 +225,7 @@ def main():
             og_file=og_file,
             img_w=w,
             img_h=h,
-            target=TARGET,
+            target=target,
         )
         path = os.path.join(go_dir, p["slug"] + ".html")
         with open(path, "w", encoding="utf-8") as f:
