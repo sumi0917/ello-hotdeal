@@ -24,6 +24,8 @@ git push origin main:gh-pages
 | 5호 초1 2학기 수학 복습 (무료) | https://sumi0917.github.io/ello-hotdeal/go/math1-rev.html | `og/math1-rev.png` |
 | 6호 초2 1학기 수학 예습 (무료) | https://sumi0917.github.io/ello-hotdeal/go/math2-pre.html | `og/math2-pre.png` |
 | 7호 1학년 수학 총정리 30일 챌린지 (2,900원) | https://sumi0917.github.io/ello-hotdeal/go/math30.html | `og/math30.png` |
+| 8호 초등 2학년 수학 1년 총정리 (80쪽·2,900원) | https://sumi0917.github.io/ello-hotdeal/go/math2-year.html | `og/math2-year.png` |
 
-- `go/*.html`·`og/*` 를 다시 만들려면 리포 루트에서 `python3 make-go-links.py`
+- 8호는 1~7호와 달리 이동 위치가 `https://litt.ly/ello`가 아니라 초2 블럭 판매 페이지 `https://litt.ly/ello/sale/esdKvdP` 입니다.
+- `go/*.html`·`og/*` 를 다시 만들려면 리포 루트에서 `python3 make-go-links.py` (하나만: `python3 make-go-links.py --only math2-year`)
 - `deploy.sh`는 `go/`·`og/` 를 지우지 않으며, 배포 전후에 내용이 같은지 확인하고 다르면 중단합니다.
