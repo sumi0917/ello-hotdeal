@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="설문지와 무선 이어폰">
+  <defs>
+    <linearGradient id="nb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ECF0FA"/><stop offset="1" stop-color="#D2DDF4"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="44" fill="url(#nb)"/>
+  <ellipse cx="92" cy="166" rx="52" ry="9" fill="#AFC2E6" opacity=".45"/>
+  <rect x="42" y="46" width="96" height="108" rx="12" fill="#FFFFFF"/>
+  <rect x="70" y="36" width="40" height="20" rx="8" fill="#1B4E9B"/>
+  <g stroke="#8FA9DC" stroke-width="4" stroke-linecap="round">
+    <path d="M58 78l7 7 12-12"/>
+    <path d="M58 102l7 7 12-12"/>
+  </g>
+  <g fill="#C7D5EE">
+    <rect x="86" y="74" width="38" height="7" rx="3.5"/>
+    <rect x="86" y="98" width="30" height="7" rx="3.5"/>
+    <rect x="58" y="126" width="66" height="7" rx="3.5"/>
+  </g>
+  <g>
+    <path d="M138 96c-16 0-26 12-26 26s10 26 26 26" fill="none" stroke="#2B3A55" stroke-width="7" stroke-linecap="round"/>
+    <rect x="130" y="112" width="14" height="26" rx="7" fill="#1B4E9B"/>
+    <rect x="130" y="138" width="14" height="22" rx="7" fill="#4E7BC9" transform="rotate(180 137 149)"/>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="체크 표시가 있는 설문지와 커피">
+  <defs>
+    <linearGradient id="gb2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ECF7EC"/><stop offset="1" stop-color="#CDE9D2"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="44" fill="url(#gb2)"/>
+  <ellipse cx="100" cy="164" rx="50" ry="9" fill="#A9D3B2" opacity=".45"/>
+  <rect x="48" y="44" width="104" height="112" rx="12" fill="#FFFFFF"/>
+  <rect x="78" y="34" width="44" height="20" rx="8" fill="#2E7D4F"/>
+  <g stroke="#8FC6A2" stroke-width="4" stroke-linecap="round">
+    <path d="M66 80l8 8 14-14"/>
+    <path d="M66 106l8 8 14-14"/>
+    <path d="M66 132l8 8 14-14"/>
+  </g>
+  <g fill="#CFE6D6">
+    <rect x="98" y="76" width="40" height="7" rx="3.5"/>
+    <rect x="98" y="102" width="32" height="7" rx="3.5"/>
+    <rect x="98" y="128" width="36" height="7" rx="3.5"/>
+  </g>
+  <g>
+    <path d="M140 122h22l-3 22a8 8 0 0 1-8 7h-6a8 8 0 0 1-8-7z" fill="#FFFFFF"/>
+    <path d="M140 122h22l-1 5h-20z" fill="#EAD8C2"/>
+    <path d="M162 128h4a8 8 0 0 1 0 16h-4" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+  </g>
+</svg>

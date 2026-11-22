@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="공연 초대권과 별">
+  <defs>
+    <linearGradient id="sb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3A2E5C"/><stop offset="1" stop-color="#191325"/>
+    </linearGradient>
+    <linearGradient id="tk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF3D1"/><stop offset="1" stop-color="#F2D89A"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="44" fill="url(#sb)"/>
+  <circle cx="152" cy="52" r="34" fill="#8E6BE0" opacity=".35"/>
+  <g transform="rotate(-10 100 106)">
+    <path d="M34 78h132a10 10 0 0 1 10 10v12a10 10 0 0 0 0 20v12a10 10 0 0 1-10 10H34a10 10 0 0 1-10-10v-12a10 10 0 0 0 0-20V88a10 10 0 0 1 10-10z" fill="url(#tk)"/>
+    <path d="M112 80v60" stroke="#C9A960" stroke-width="3" stroke-dasharray="6 6"/>
+    <path d="M60 98l5 11 12 1.5-9 8.5 2.5 12-10.5-6-10.5 6 2.5-12-9-8.5 12-1.5z" fill="#6B4BB8"/>
+    <g fill="#C9A960">
+      <rect x="126" y="100" width="34" height="6" rx="3"/>
+      <rect x="126" y="114" width="24" height="6" rx="3"/>
+    </g>
+  </g>
+  <circle cx="46" cy="46" r="7" fill="#F2D89A" opacity=".85"/>
+</svg>
