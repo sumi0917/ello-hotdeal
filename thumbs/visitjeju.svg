@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="제주 지도와 여행 일정 핀">
+  <defs>
+    <linearGradient id="vj" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF1E2"/><stop offset="1" stop-color="#FBD8B6"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="44" fill="url(#vj)"/>
+  <ellipse cx="98" cy="126" rx="62" ry="34" fill="#F2B47A" opacity=".75"/>
+  <path d="M70 116l20-26 20 26z" fill="#E8792B"/>
+  <path d="M96 106l14-16 14 16z" fill="#D96B22"/>
+  <circle cx="70" cy="138" r="6" fill="#FFFFFF" opacity=".9"/>
+  <circle cx="120" cy="140" r="5" fill="#FFFFFF" opacity=".9"/>
+  <g>
+    <path d="M126 44c-11 0-20 9-20 20 0 15 20 34 20 34s20-19 20-34c0-11-9-20-20-20z" fill="#2E6F9E"/>
+    <circle cx="126" cy="64" r="8" fill="#FFFFFF"/>
+  </g>
+  <g stroke="#E8A160" stroke-width="4" stroke-linecap="round">
+    <path d="M42 96h18"/><path d="M36 108h14"/>
+  </g>
+</svg>

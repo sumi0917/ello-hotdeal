@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="호텔 스위트 침대와 별">
+  <defs>
+    <linearGradient id="mc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F6EAF3"/><stop offset="1" stop-color="#E3C9DE"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="44" fill="url(#mc)"/>
+  <circle cx="152" cy="56" r="26" fill="#8E3B7A" opacity=".18"/>
+  <g fill="#F2C14E">
+    <path d="M152 38l4 9 10 1-7 7 2 10-9-5-9 5 2-10-7-7 10-1z"/>
+  </g>
+  <g>
+    <rect x="36" y="112" width="128" height="34" rx="8" fill="#FFFFFF"/>
+    <rect x="36" y="96" width="44" height="20" rx="8" fill="#F0DDEB"/>
+    <rect x="84" y="102" width="80" height="14" rx="6" fill="#FFFFFF"/>
+    <path d="M36 146h128" stroke="#C9A8BF" stroke-width="6" stroke-linecap="round"/>
+    <rect x="36" y="120" width="128" height="12" fill="#8E3B7A" opacity=".55"/>
+    <rect x="34" y="150" width="8" height="14" rx="4" fill="#B07CA4"/>
+    <rect x="158" y="150" width="8" height="14" rx="4" fill="#B07CA4"/>
+  </g>
+</svg>

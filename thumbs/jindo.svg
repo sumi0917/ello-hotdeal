@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="바닷가 리조트 숙박권">
+  <defs>
+    <linearGradient id="jd" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E7F4F9"/><stop offset="1" stop-color="#BFE2EF"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="44" fill="url(#jd)"/>
+  <path d="M0 132c22-12 44-12 66 0s44 12 66 0 44-12 68 0v68H0z" fill="#8DC6DC" opacity=".55"/>
+  <rect x="40" y="86" width="74" height="46" rx="8" fill="#FFFFFF"/>
+  <path d="M40 96l37-26 37 26z" fill="#2E8BA8"/>
+  <rect x="62" y="106" width="18" height="26" rx="4" fill="#BFE2EF"/>
+  <rect x="88" y="106" width="16" height="12" rx="3" fill="#BFE2EF"/>
+  <g transform="rotate(-6 138 118)">
+    <rect x="106" y="96" width="64" height="40" rx="8" fill="#2E8BA8"/>
+    <g fill="#DDF0F7">
+      <rect x="116" y="106" width="30" height="5" rx="2.5"/>
+      <rect x="116" y="118" width="22" height="5" rx="2.5"/>
+    </g>
+    <circle cx="158" cy="122" r="9" fill="#F2C14E"/>
+  </g>
+  <path d="M24 150c10-6 20-6 30 0" stroke="#FFFFFF" stroke-width="4" fill="none" stroke-linecap="round" opacity=".8"/>
+</svg>
